@@ -1,0 +1,44 @@
+/* version 0 */
+@import url(normalise.less);
+
+// set variables
+@titles: #ffffff;
+@header: #333333;
+@body: #666666;
+@footer: #999999;
+
+.detect-top {
+  border: solid 1px yellow;
+}
+.detect-bottom {
+  border: solid 1px red;
+}
+
+header {
+  background: @header;
+  color: @titles;
+}
+
+body {
+  > section {
+    background: @body;
+  }
+}
+
+footer {
+  background: @footer;
+}
+
+header {
+  padding: 20px;
+  h1 {
+    margin: 0;
+  }
+}
+
+footer {
+  padding: 20px;
+  p {
+    margin: 0;
+  }
+}
